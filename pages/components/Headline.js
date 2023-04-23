@@ -5,15 +5,12 @@ import Image from 'next/image'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Headline(props) {
-
-const { page } = props;
-
   return (
     <div>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
-          <code className={styles.code}>next/{page}.tsx</code>
+          {props.children}
         </p>
         <div>
           <a
