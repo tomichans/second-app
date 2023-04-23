@@ -6,7 +6,7 @@ import Headline from './Headline.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function Main(props) {
+export default function Main(props) {
   return (
     <main className={styles.main}>
       <Headline>
