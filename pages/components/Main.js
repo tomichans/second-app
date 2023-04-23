@@ -1,28 +1,26 @@
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import classes from './Main.module.css'
 import Image from 'next/image'
 import Links from './Links.js'
 import Headline from './Headline.js'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Main(props) {
   return (
-    <main className={styles.main}>
+    <main className={classes.main}>
       <Headline>
-       <code className={styles.code}>next/{props.page}.tsx</code>
+       <code className={classes.code}>next/{props.page}.tsx</code>
       </Headline>
 
-      <div className={styles.center}>
+      <div className={classes.center}>
         <Image
-          className={styles.logo}
+          className={classes.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
         />
-        <div className={styles.thirteen}>
+        <div className={classes.thirteen}>
           <Image
             src="/thirteen.svg"
             alt="13"
