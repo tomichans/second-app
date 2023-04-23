@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function Headline(props) {
+export default function Headline(props) {
 
 const { page } = props;
 
