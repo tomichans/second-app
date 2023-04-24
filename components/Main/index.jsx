@@ -1,8 +1,7 @@
-import { Inter } from 'next/font/google'
-import classes from './Main.module.css'
+import classes from 'components/Main/Main.module.css'
 import Image from 'next/image'
-import Links from './Links.js'
-import Headline from './Headline.js'
+import Links from 'components/Links'
+import Headline from 'components/Headline'
 
 export default function Main(props) {
   return (

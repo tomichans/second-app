@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google'
 import classes from './Headline.module.css'
 import Image from 'next/image'
 
