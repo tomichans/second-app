@@ -6,19 +6,19 @@ import React, { useCallback, useEffect } from 'react';
 export default function Home() {
   const foo = 1;
 
-  const handleClick = useCallback((e:React.MouseEvent) => {
-    console.log(e.target.href);
-    e.preventDefault();
-    alert(foo);
-  }, []);
-
-  // useEffect(() => {
-  //   document.body.style.backgroundColor = "lightblue"
-
-  //   return () => {
-  //     document.body.style.backgroundColor = ""
-  //   }
+  // const handleClick = useCallback((e:React.MouseEvent) => {
+  //   console.log(e.target.href);
+  //   e.preventDefault();
+  //   alert(foo);
   // }, []);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "lightblue"
+
+    return () => {
+      document.body.style.backgroundColor = ""
+    }
+  }, []);
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Home() {
         <title>index Page</title>
       </Head>
       <Header />
-      <a href='/about' onClick={handleClick}>ボタン</a>
+      {/* <a href='/about' onClick={handleClick}>ボタン</a> */}
       <Main page="index" />
     </>
   )
