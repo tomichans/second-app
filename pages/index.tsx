@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Main from '../components/Main'
 import Header from '../components/Header'
 import { useBgLightBlue } from '@/hooks/useBgLightBlue';
+import { Props } from './about';
 
-export default function Home(props) {
+export default function Home(props:Props) {
   const {count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   useBgLightBlue();
 

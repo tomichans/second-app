@@ -2,8 +2,20 @@ import Head from 'next/head'
 import Main from '../components/Main'
 import Header from '../components/Header'
 import { useBgLightBlue } from '@/hooks/useBgLightBlue';
+import React from 'react';
 
-export default function About(props) {
+export type Props = {
+  count: number;
+  isShow: boolean;
+  handleClick: () => void;
+  handleDisplay: () => void;
+  text: string;
+  array: string[];
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleAdd: () => void;
+}
+
+export default function About(props: Props) {
   const {count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   useBgLightBlue();
 
